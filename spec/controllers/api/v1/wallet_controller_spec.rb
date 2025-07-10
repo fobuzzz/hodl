@@ -26,7 +26,7 @@ RSpec.describe Api::V1::WalletController, type: :controller do
       end
 
       it 'calls PlaceKey command with params' do
-        expect(Wallet::PlaceKey).to receive(:call).with(payload: kind_of(ActionController::Parameters))
+        expect(Wallet::PlaceKey).to receive(:call).with(payload: {})
 
         post :create_key, params: params
       end
@@ -72,7 +72,7 @@ RSpec.describe Api::V1::WalletController, type: :controller do
       end
 
       it 'calls ShowBalance command with params' do
-        expect(Wallet::ShowBalance).to receive(:call).with(payload: kind_of(ActionController::Parameters))
+        expect(Wallet::ShowBalance).to receive(:call).with(payload: { 'address' => address })
 
         get :show_balance, params: params
       end
@@ -123,7 +123,11 @@ RSpec.describe Api::V1::WalletController, type: :controller do
       end
 
       it 'calls SendFunds command with params' do
-        expect(Wallet::SendFunds).to receive(:call).with(payload: kind_of(ActionController::Parameters))
+        expect(Wallet::SendFunds).to receive(:call).with(payload: {
+          'from_wif' => 'cVUdoCKM9WvEjx3DUGpPNinCDmgLCabZ2k9kZ1JG4McfbmCV2VVg',
+          'to_address' => 'tb1qw508d6qejxtdg4y5r3zarvary0c5xw7kxpjzsx',
+          'amount' => '1000'
+        })
 
         post :send_funds, params: params
       end

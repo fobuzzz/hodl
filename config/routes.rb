@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       post 'wallet/create_key', to: 'wallet#create_key'
-      get 'wallet/show_balance', to: 'wallet#show_balance'
+      get 'wallet/balance', to: 'wallet#show_balance'
+      get 'wallet/show_balance', to: 'wallet#show_balance'  # для обратной совместимости
       post 'wallet/send_funds', to: 'wallet#send_funds'
     end
   end
