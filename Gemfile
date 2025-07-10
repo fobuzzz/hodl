@@ -60,7 +60,7 @@ group :development, :test do
   gem 'guard-rspec', require: false
 end
 
-gem 'bitcoinrb', '~> 1.7'
+gem 'bitcoinrb', '~> 1.8'
 gem 'dry-monads', '~> 1.9'
 gem 'dry-validation', '~> 1.11'
 gem 'rubocop-performance', require: false
