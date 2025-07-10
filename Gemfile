@@ -50,7 +50,7 @@ group :development, :test do
   # RSpec for testing
   gem 'factory_bot_rails'
   gem 'rspec-collection_matchers'
-  gem 'rspec-rails', '~> 6.0'
+  gem 'rspec-rails', '~> 8.0'
   gem 'webmock'
 
   # Test coverage
