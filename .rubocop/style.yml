@@ -1,0 +1,33 @@
+Style/Documentation:
+  Enabled: false
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
+
+Style/Lambda:
+  Exclude:
+    - '**/app/models/**/*'
+    - '**/config/routes.rb'
+    - '**/config/routes/**/*'
+
+Style/SignalException:
+  Exclude:
+    - '**/app/interactors/**/*.rb'
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/WordArray:
+  Enabled: false
+
+Style/RedundantAssignment:
+  Enabled: false
+
+Style/EmptyElse:
+  EnforcedStyle: "empty" 

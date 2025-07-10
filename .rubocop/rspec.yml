@@ -1,0 +1,50 @@
+RSpec/Focus:
+  Enabled: true
+  Exclude: []
+
+RSpec/NestedGroups:
+  Max: 5
+
+RSpec/EmptyExampleGroup:
+  Exclude:
+    - 'spec/requests/**/*'
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/ScatteredSetup:
+  Exclude:
+    - 'spec/requests/**/*'
+
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+
+RSpec/AnyInstance:
+  Enabled: false
+
+RSpec/StubbedMock:
+  Enabled: false
+
+RSpec/LetSetup:
+  Enabled: false
+
+RSpec/MessageSpies:
+  Enabled: false
+
+RSpec/ContextWording:
+  Enabled: false
+
+RSpec/VerifiedDoubles:
+  Enabled: false
+
+RSpec/ImplicitSubject:
+  Enabled: false
+
+RSpec/IndexedLet:
+  Enabled: false
+
+RSpec/InstanceVariable:
+  Enabled: false 

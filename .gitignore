@@ -1,0 +1,52 @@
+# Docker
+Dockerfile*
+docker-compose.yml
+
+# Wallet (секреты)
+/wallet/
+
+# Node/npm
+node_modules/
+
+# dotenv
+.env*
+
+# Coverage
+coverage/
+
+# Byebug
+.byebug_history
+
+# Mac
+.DS_Store
+
+# Logs and temp
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# PIDs
+/tmp/pids/*
+!/tmp/pids/
+!/tmp/pids/.keep
+
+# Storage
+/storage/*
+!/storage/.keep
+/tmp/storage/*
+!/tmp/storage/
+!/tmp/storage/.keep
+
+# Master key
+/config/master.key
+
+# SQLite
+*.sqlite3
+*.sqlite3-journal
+
+# Bundler
+.bundle
+
+# Vendor
+/vendor/bundle

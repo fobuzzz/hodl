@@ -1,0 +1,19 @@
+Metrics/BlockLength:
+  Exclude:
+    - '**/config/routes/**/*'
+    - '**/config/routes.rb'
+    - '**/lib/tasks/**/*'
+    - '**/spec/**/*'
+
+Metrics/ParameterLists:
+  CountKeywordArgs: false
+
+Metrics/MethodLength:
+  Max: 20
+
+Metrics/AbcSize:
+  Exclude:
+    - 'app/commands/wallet/actions/fetch_balance.rb'
+    - 'app/services/transaction_broadcaster.rb'
+    - 'app/services/transaction_builder.rb'
+    - 'app/services/utxo_fetcher.rb' 

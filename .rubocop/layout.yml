@@ -1,0 +1,34 @@
+Layout/ArgumentAlignment:
+  EnforcedStyle: with_fixed_indentation
+  Exclude: []
+
+Layout/ParameterAlignment:
+  EnforcedStyle: with_fixed_indentation
+  Exclude: []
+
+Layout/FirstArrayElementIndentation:
+  EnforcedStyle: consistent
+  Exclude: []
+
+Layout/FirstHashElementIndentation:
+  EnforcedStyle: consistent
+  Exclude: []
+
+Layout/LineLength:
+  Max: 120
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+  Exclude: []
+
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+Layout/LineEndStringConcatenationIndentation:
+  Enabled: false
+
+Layout/CaseIndentation:
+  EnforcedStyle: end
+
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: start_of_line 

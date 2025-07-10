@@ -1,0 +1,5 @@
+Naming/PredicatePrefix:
+  Enabled: true
+
+Naming/VariableNumber:
+  Enabled: false 

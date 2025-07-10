@@ -1,0 +1,49 @@
+# ========================================
+#  Before disabling a rubocop rule
+#  or changing any default value
+#  please take a deep breath and
+#  discuss your decision with colleagues,
+#  remember —
+#  people do not need better standards,
+#  they do need STANDARD standards
+# ========================================
+
+inherit_from:
+  - .rubocop/layout.yml
+  - .rubocop/lint.yml
+  - .rubocop/metrics.yml
+  - .rubocop/naming.yml
+  - .rubocop/rails.yml
+  - .rubocop/rspec.yml
+  - .rubocop/style.yml
+
+plugins:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 3.2.2
+  NewCops: enable
+  Exclude:
+    - 'lib/ruby_warning_patches/**/*'
+    - '.git/**/*'
+    - '**/config/application.rb'
+    - '**/config/boot.rb'
+    - '**/config/environments/**/*'
+    - '**/config/puma.rb'
+    - '**/config/routes.rb'
+    - '**/spec/*_helper.rb'
+    - '**/spec/**/support/**/*'
+    - '**/db/**/*'
+    - 'bin/**/*'
+    - 'node_modules/**/*'
+    - 'script/**/*'
+    - 'tmp/**/*'
+    - 'vendor/**/*'
+    - './Rakefile'
+    - './config.ru'
+
+# Исправлено для Rubocop 1.77+
+Naming/PredicatePrefix:
+  Enabled: true

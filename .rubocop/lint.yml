@@ -1,0 +1,13 @@
+Lint/Debugger:
+  Enabled: true
+  Exclude: []
+
+Lint/RaiseException:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
+
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - "spec/**/*" 
